@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #0171e9;
+    padding: 15px;
+    color: #fff;
+   
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+.seat-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    margin: 50px;
+}
+
+.seat {
+    padding: 7px;
+    width: 60px;
+    height: 60px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.seat.available {
+    background-color: #b5e7a0;
+}
+
+.seat.selected {
+    background-color: #f1c232;
+    cursor: not-allowed;
+}

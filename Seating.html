@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seating - Gani Film</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">Gani Film</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="ListFilm.html">List Film</a>
+            <a class="nav-link" href="Seating.html">Seating</a>
+    </nav>
+
+    <div class="container">
+        <div class="seat-container" id="seatContainer">
+            <div class="seat available" onclick="toggleSeat(this)"></i> Seat A1</div>
+            <div class="seat selected"></i> Seat A2</div>
+            <div class="seat available" onclick="toggleSeat(this)"></i> Seat A3</div>
+            <div class="seat selected"></i> Seat A4</div>
+            <div class="seat available" onclick="toggleSeat(this)"></i> Seat B1</div>
+            <div class="seat available" onclick="toggleSeat(this)"></i> Seat B2</div>
+            <div class="seat selected"></i> Seat B3</div>
+            <div class="seat available" onclick="toggleSeat(this)"></i> Seat B4</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSeat(seat) {
+            if (!seat.classList.contains('selected')) {
+                seat.classList.toggle('available');
+                seat.classList.toggle('selected');
+            }
+        }
+    </script>
+</body>
+</html>
